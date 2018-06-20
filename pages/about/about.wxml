@@ -1,0 +1,40 @@
+<!-- logs.wxml<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view> -->
+  <view>
+    <view class="a-head">
+      <view class="left">
+        <view class="name">热爱前端的一名小小程序员</view>
+        <view class="job">前端工程师</view>
+      </view>
+      <view class=" {{isPlay?'right Rotation':'right'}}">
+        <image src="https://avatars0.githubusercontent.com/u/28291594?s=460&v=4" bindtap="previewImage" data-url="https://avatars0.githubusercontent.com/u/28291594?s=460&v=4"/>
+      </view>
+    </view>
+    <view class="wrap">
+      <view class="line"/>
+      <view class="list-view icon-address" bindtap="openMap">上海市虹口区</view>
+      <view class="list-view icon-mail">511470558@qq.com</view>
+      <view class="list-view icon-github"><a href="https://github.com/PengMengShan">https://github.com/PengMengShan</a></view>
+      <view class="list-view icon-blog">http://www.pengmengshan.cn</view>
+    </view>
+    <view class="Motto">
+         当你无法从一楼蹦到三楼时，不要忘记走楼梯。要记住伟大的成功往往不是一蹴而就的，务必学习并领悟分解你的目标，逐步实施。{{musicTime}}
+    </view>
+    <view class="music-audio">
+      <view class="poster left " bindtap="playMusic">
+        <image src="http://www.pengmengshan.cn/img/huangjiaju.jpg"/>
+        <view class="music-icon {{isPlay?'pause':'paly'}}"></view>
+      </view>
+      <view class="music-info left">
+        <text class="music-title">海阔天空</text>
+        <text class="right duration">{{musicTime || "0:00"}}</text>
+      </view>
+      <view class="music-author left">beyond</view>
+      <view class="progress left">
+        <view class="currbar" style="width:{{playState.currentPosition*100 / playState.duration}}%"/>
+      </view>
+    </view>
+  </view>

@@ -1,0 +1,30 @@
+{
+   "pages": [
+      "pages/index/index",
+      "pages/about/about"
+   ],
+   "window": {
+      "backgroundTextStyle": "dark",
+      "navigationBarBackgroundColor": "#ffac1c",
+      "navigationBarTitleText": "PMS天气",
+      "navigationBarTextStyle": "#fff",
+      "enablePullDownRefresh": true
+   },
+   "tabBar": {
+      "list": [{
+         "pagePath": "pages/index/index",
+         "iconPath": "pages/img/news.png",
+         "selectedIconPath": "pages/img/news-active.png",
+         "text": "天气"
+      }, {
+         "pagePath": "pages/about/about",
+         "iconPath": "pages/img/about.png",
+         "selectedIconPath": "pages/img/about-active.png",
+         "text": "关于我"
+      }],
+      
+      "color": "#333333",
+      "selectedColor": "#ffac1c",
+      "borderStyle": "block"
+   }
+}
